@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{font-family: 'poppins', sans-serif; 
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+scroll-behavior: smooth;
+scroll-padding-top: 1rem;
+list-style: none;}
+section {
+    padding: 4rem 0 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    color: black;
+}
+nav {
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+header {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+#menu-icone {
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+    display: none;
+}
+.logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: black;
+}
+.logo span {
+    color: red;
+}
+.barraDeNavegação {
+    display: flex;
+    column-gap: 2rem;
+}
+.barraDeNavegação a {
+    color: black;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.barraDeNavegação a:hover,
+.barraDeNavegação .ativo {
+    color: red;
+    border-bottom: 3px solid red;
+}
+#iconeDePesquisa {
+    font-size: 24px;
+    cursor: pointer;
+}
+.caixaDePesquisa {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    background: whit;
+    box-shadow: 4px 4px 20px rgb(15, 54, 55 / 10%);
+    border: 1px solid red;
+    border-radius: 0.5rem;
+    clip-path: circle(0% at 100% 0%);
+}
+
+.caixaDePesquisa.active {
+    clip-path: circle(144% at 100% 0%);
+    transition: 0.7s;
+    background-color:white;
+}
+.caixaDePesquisa input {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+}
+.home {
+    max-width: 1300px;
+    width: 100%;
+    min-height: 640px;
+}
+.homeImage {
+    margin-left: 85%;
+    width: 600PX;
+    position: absolute;
+    display: flex;
+}
+.home-texto {
+   padding-left: 130px;
+   margin-top: 15%;
+   margin-left: 15%;
+}
+.home-texto h1 {
+    font-size: 3rem;
+}
+.home-texto span {
+    color: red;
+}
+.home-texto p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0.5rem 0 1.2rem;
+}
+.btn {
+    padding: 10px 22px;
+    background:red;
+    color:white;
+    font-weight: 400;
+}
+.btn:hover {
+    background: rgb(189, 21, 21);
+}
+.heading {
+    text-align: center;
+}
+.heading span {
+    font-weight: 500;
+    color: red;
+}
+.heading p {
+    font-size: 1rem;
+}
+.listaDeCarros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.listaDeCarros .Marcas {
+    flex: 1 1 17rem;
+    position: relative;
+    height: 200px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.listaDeCarros .Marcas img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.listaDeCarros .Marcas img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.listaDeCarros .Marcas h2 {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    background: white;
+    padding: 8px;
+}
