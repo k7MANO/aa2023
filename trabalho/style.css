@@ -9,16 +9,21 @@ text-decoration: none;
 scroll-behavior: smooth;
 scroll-padding-top: 1rem;
 list-style: none;}
+
 section {
     padding: 4rem 0 2rem;
 }
-
-img {
-    width: 100%;
+body {
+    background-image: url(/trabalho/imgs/jaguar-1576059_1920.jpg);
+    background-repeat: no-repeat;
+    width: max-content;
+    height: max-content;
 }
 
 body {
-    color: black;
+  
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 nav {
     max-width: 1068px;
@@ -70,12 +75,12 @@ header {
     font-size: 24px;
     cursor: pointer;
 }
-.caixaDePesquisa {
+.caixaDePesquisa{
     position: absolute;
     top: 110%;
     left: 0;
     right: 0;
-    background: whit;
+    background: white;
     box-shadow: 4px 4px 20px rgb(15, 54, 55 / 10%);
     border: 1px solid red;
     border-radius: 0.5rem;
@@ -91,7 +96,6 @@ header {
     width: 100%;
     padding: 20px;
     border: none;
-    outline: none;
     background: transparent;
     font-size: 1rem;
 }
@@ -141,30 +145,32 @@ header {
 .heading p {
     font-size: 1rem;
 }
-.listaDeCarros {
+.cars-container {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 2rem;
+
 }
-.listaDeCarros .Marcas {
+.cars-container .box {
     flex: 1 1 17rem;
     position: relative;
     height: 200px;
     border-radius: 0.5rem;
     overflow: hidden;
+
 }
-.listaDeCarros .Marcas img {
-    height: 100%;
+.cars-container .box img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     overflow: hidden;
 }
-.listaDeCarros .Marcas img:hover {
+.cars-container .box img:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
-.listaDeCarros .Marcas h2 {
+.cars-container .box h2 {
     position: absolute;
     bottom: 1rem;
     left: 1rem;
@@ -172,4 +178,9 @@ header {
     font-size: 1rem;
     background: white;
     padding: 8px;
+    border-radius: 0.5rem;
+}
+.cars-container .box:hover h2 {
+    background: red;
+    color: white;
 }
