@@ -14,16 +14,9 @@ section {
     padding: 4rem 0 2rem;
 }
 body {
-    background-image: url(/trabalho/imgs/jaguar-1576059_1920.jpg);
-    background-repeat: no-repeat;
-    width: max-content;
-    height: max-content;
-}
-
-body {
-  
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left:20vw;
+    margin-right:20vw;
+    align-items: center;
 }
 nav {
     position: sticky;
@@ -103,15 +96,15 @@ header {
     background: transparent;
     font-size: 1rem;
 }
-#esquerda {
-    margin: 0;
-    padding: 0;
-    width: 80vw;
-}
+
 #direita {
     margin: 0;
     padding: 0;
-    width: 20vw;
+    width: 30vw;
+    float: right;
+}
+#direita img {
+    position: relative;
 }
 .home {
     max-width: 1300px;
@@ -266,4 +259,49 @@ header {
 .pecas-container .box .detalhes:hover {
     color: red;
     text-decoration: underline;
+}
+.blogConteudo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.blogConteudo .box {
+    flex: 1 1 13rem;
+    padding: 20px;
+}
+.blogConteudo .box img {
+    height: 15vw;
+    width: 15vw;
+}
+.blogConteudo .box:hover {
+    background-color: whitesmoke;
+}
+.blogConteudo .box span {
+    font-size: 0.8rem;
+    color: red;
+}
+.blogConteudo h3 {
+    font-size: 1.2rem;
+}
+.blogConteudo .box P {
+    font-size: 0.938rem;
+    margin: 4px 0;
+}
+.boxCima {
+    height: 95%;
+}
+.blogConteudo .box .blog-btn {
+    display: flex;
+    column-gap: 4px;
+    color: black;
+    height: 5%;
+}
+.blogConteudo .box .blog-btn .bx {
+    font-size: 20px;
+}
+.blogConteudo .box .blog-btn:hover {
+    column-gap: 0.7rem;
+    transition: 0.4s;
+    color: red;
 }
