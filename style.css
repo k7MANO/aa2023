@@ -9,11 +9,18 @@ text-decoration: none;
 scroll-behavior: smooth;
 scroll-padding-top: 1rem;
 list-style: none;}
-
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    border-radius: 5rem;
+    background: black;
+}
 section {
     padding: 4rem 0 2rem;
 }
-body {
+#esquerda {
     margin-left:20vw;
     margin-right:20vw;
     align-items: center;
@@ -38,6 +45,11 @@ header {
     top: 0;
     left: 0;
     z-index: 100;
+}
+header.shadow {
+    background: white;
+    box-shadow: 4px 4px 20px black;
+    transition: 0.5s;
 }
 #menu-icone {
     font-size: 24px;
@@ -304,4 +316,54 @@ header {
     column-gap: 0.7rem;
     transition: 0.4s;
     color: red;
+}
+.footer {
+    background: black;
+    color: white;
+    border-top: 2px solid red;
+    
+}
+.footer-boxes {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.footer-containter  .logo {
+    color: white;
+    margin-bottom: 1rem;
+}
+.footer-containter .footer-box {
+    display: flex;
+    flex-direction: column;
+}
+.social {
+    display: flex;
+    align-items: center;
+    
+}
+.social a {
+    font-size: 24px;
+    color: white;
+    margin-right: 1rem;
+}
+.social a:hover {
+    color: red;
+    transition: 0.5s;
+}
+.footer-box h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.footer-box a {
+    color: gray;
+    margin-bottom: 10px;
+}
+.footer-box p {
+    color: gray;
+    margin-bottom: 10px;
+}
+.footer-box a:hover {
+    color: red;
+    transition: 0.5s;
 }
