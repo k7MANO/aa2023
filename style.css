@@ -180,7 +180,7 @@ header.shadow {
     overflow: hidden;
 }
 .cars-container .box img:hover {
-    transform: scale(1.0.5);
+    transform: scale(1.1);
     transition: 0.7s;
 }
 .cars-container .box h2 {
