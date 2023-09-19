@@ -110,7 +110,46 @@
     }
     #cabeçário {
         margin-top: 15vh;
+        margin-left: 40vh;
         padding: 8px;
-        display: flex;
-        justify-content: center;
+        align-content: center;
+    }
+    #cabeçário img {
+        border-radius: 5vh;
+        margin-left: 20vh;
+    }
+    #cabeçário h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    #cabeçário h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: red;
+    }
+    #texto {
+        padding: 16px;
+    }
+    #texto h4 {
+        margin-top: 5vh;
+        color: red;
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    #texto p {
+        color: black;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    .btn {
+        position: relative;
+        padding: 10px 22px;
+        background:red;
+        color:white;
+        font-weight: 400;
+    }
+    header.shadow {
+        background: white;
+        box-shadow: 4px 4px 20px black;
+        transition: 0.5s;
     }
